@@ -1,4 +1,6 @@
+########################################################
 # Banker Roulette Exercise - Who will pay the bill?
+########################################################
 #import random
 # 🚨 Don't change the code below 👇
 #test_seed = int(input("Create a seed number: "))
@@ -13,6 +15,10 @@
 #bill_taker = random.randint(0, len(names)-1)
 #name = names[bill_taker]
 #print(f"{name} is going to buy the meal today!")
+
+########################################################
+# Treasure Map
+########################################################
 
 # 🚨 Don't change the code below 👇
 row1 = ["⬜️","⬜️","⬜️"]
