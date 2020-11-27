@@ -45,6 +45,7 @@ while game_over == False and lives > 0:
     print(stages[lives])
 
 if lives == 0:
-    print("You lose")
+    print(f"You lose. The word we were looking for was {chosen_word}")
+
 else:
     print("You won")
