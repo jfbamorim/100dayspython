@@ -28,11 +28,10 @@ while game_over == False and lives > 0:
 #Check if the letter the user guessed is one of the letters in the chosen_word.
 #for word in word_len:
 #    print(char_choose == word)
-    if char_choose not in chosen_word and lives > 0:
+    if char_choose not in chosen_word:
         lives -= 1
         print(f"You guessed {char_choose}, that's not in the word. You lose a life.")
-
-    if char_choose in display:
+    else:
         print(f"You've already guessed {char_choose}")
 
     for position in range(word_len):
@@ -49,6 +48,3 @@ if lives == 0:
     print("You lose")
 else:
     print("You won")
-
-#TODO-4: - If the user has entered a letter they've already guessed, print the letter and let them know.
-# TODO-5: - If the letter is not in the chosen_word, print out the letter and let them know it's not in the word.
