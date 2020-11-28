@@ -72,3 +72,24 @@ travel_log = [
         "total_visits": 4
     }
 ]
+
+
+# Exercise 9.2 - Test your code
+# You are going to write a program that adds to a travel_log.
+# You can see a travel_log which is a List that contains 2 Dictionaries.
+def add_new_country(country, times_visited, cities):
+    # Other solution:
+    # new_country = {}
+    # new_country["country"] = name
+    # new_country["visits"] = visit_count
+    # new_country["cities"] = cities_visited
+    new_country_to_add = {
+        "country": country,
+        "visits": times_visited,
+        "cities": cities,
+    }
+    travel_log.append(new_country_to_add)
+
+
+add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
+print(travel_log)
