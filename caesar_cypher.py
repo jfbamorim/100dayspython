@@ -10,9 +10,9 @@ print(caesar_cypher_art.logo)
 
 def caesar(text, shift, direction):
     text_output = ""
-    for letter in text:
-        if letter.isalpha():
-            idx_alphabet = alphabet.index(letter.lower())
+    for char in text:
+        if char.isalpha():
+            idx_alphabet = alphabet.index(char.lower())
             if direction.lower() == 'encode':
                 idx_total = idx_alphabet + shift
                 if idx_total > 25:
@@ -22,7 +22,7 @@ def caesar(text, shift, direction):
                 idx_total = idx_alphabet - shift
                 text_output += alphabet[idx_total]
         else:
-            text_output += letter
+            text_output += char
     print(f"The {direction}d text is {text_output}")
 
 
