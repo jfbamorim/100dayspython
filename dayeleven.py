@@ -90,10 +90,13 @@ def compare_both_hands(user_hand, dealer_hand):
         print("Win with a Blackjack.")
     elif dealer_value == 21:
         print("Lost to a Blackjack.")
+    elif user_value == dealer_value:
+        print("You tied.")
     elif user_value > dealer_value:
         print("You won.")
     else:
         print("You lost.")
+    return
 
 
 # Main program:
@@ -110,5 +113,3 @@ while answer == 'y':
 
 #Hint 3: Download and read this flow chart I've created:
 #   https://drive.google.com/uc?export=download&id=1rDkiHCrhaf9eX7u7yjM1qwSuyEk-rPnt
-
-#Hint 8: Inside calculate_score() check for an 11 (ace). If the score is already over 21, remove the 11 and replace it with a 1. You might need to look up append() and remove().
