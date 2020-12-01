@@ -17,6 +17,7 @@ cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 
 def start_game():
+    """Start the game"""
     print(logo)
 
     #User play
@@ -53,6 +54,7 @@ def start_game():
 
 
 def deal_hand():
+    """Return hands based on deal one card"""
     your_cards = []
     first_card = deal_one_card()
     second_card = deal_one_card()
@@ -62,6 +64,7 @@ def deal_hand():
 
 
 def calc_curr_score(hand):
+    """Returns the current score of a player"""
     total_sum = sum(hand)
     if total_sum > 21:
         for card in hand:
@@ -72,11 +75,12 @@ def calc_curr_score(hand):
 
 
 def deal_one_card():
-    index = random.randint(0, 12)
-    return cards[index]
+    """Returns a random card from the deck"""
+    return random.choice(cards)
 
 
 def compare_both_hands(user_hand, dealer_hand):
+    """Comapre the hands between user and dealer"""
     user_value = calc_curr_score(user_hand)
     dealer_value = calc_curr_score(dealer_hand)
     print(f"Your final hand: {user_hand}, final score: {user_value}")
