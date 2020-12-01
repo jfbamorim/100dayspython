@@ -20,6 +20,7 @@ def start_game():
     """Start the game"""
     print(logo)
 
+    is_game_over = False
     # User play
     user_cards = deal_hand()
     user_score = calc_curr_score(user_cards)
@@ -31,10 +32,10 @@ def start_game():
     print(f"Computer's first card: {dealer_cards[0]}")
 
     if user_score == 21 or dealer_score == 21:
-        compare_both_hands(user_cards, dealer_cards)
+        is_game_over = True
 
     hit_me = input("Type 'y' to get another card, type 'n' to pass:").lower()
-    while hit_me == 'y':
+    while hit_me == 'y' and not is_game_over:
         next_card = deal_one_card()
         user_cards.append(next_card)
         user_score = calc_curr_score(user_cards)
@@ -45,7 +46,7 @@ def start_game():
         else:
             break
 
-    while dealer_score < user_score and dealer_score < 17:
+    while dealer_score < user_score and dealer_score < 17 and not is_game_over:
         dealer_next_card = deal_one_card()
         dealer_cards.append(dealer_next_card)
         dealer_score = calc_curr_score(dealer_cards)
