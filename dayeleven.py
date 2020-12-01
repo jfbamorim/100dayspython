@@ -5,13 +5,13 @@ import random
 from blackjack_art import logo
 
 ############### Our Blackjack House Rules #####################
-## The deck is unlimited in size.
-## There are no jokers.
-## The Jack/Queen/King all count as 10.
-## The the Ace can count as 11 or 1.
-## The cards in the list have equal probability of being drawn.
-## Cards are not removed from the deck as they are drawn.
-## The computer is the dealer.
+# The deck is unlimited in size.
+# There are no jokers.
+# The Jack/Queen/King all count as 10.
+# The the Ace can count as 11 or 1.
+# The cards in the list have equal probability of being drawn.
+# Cards are not removed from the deck as they are drawn.
+# The computer is the dealer.
 
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
@@ -20,12 +20,12 @@ def start_game():
     """Start the game"""
     print(logo)
 
-    #User play
+    # User play
     user_cards = deal_hand()
     user_score = calc_curr_score(user_cards)
     print(f"Your cards: {user_cards}, current score: {user_score}")
 
-    #Dealer play
+    # Dealer play
     dealer_cards = deal_hand()
     dealer_score = calc_curr_score(dealer_cards)
     print(f"Computer's first card: {dealer_cards[0]}")
@@ -40,7 +40,7 @@ def start_game():
         user_score = calc_curr_score(user_cards)
         print(f"Your cards: {user_cards}, current score: {user_score}")
         print(f"Computer's first card: {dealer_cards[0]}")
-        if user_score <= 21:
+        if user_score < 21:
             hit_me = input("Type 'y' to get another card, type 'n' to pass:").lower()
         else:
             break
