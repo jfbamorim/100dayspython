@@ -14,23 +14,35 @@ def my_function():
 
 my_function()
 
-# # Reproduce the Bug
-# from random import randint
-# dice_imgs = ["❶", "❷", "❸", "❹", "❺", "❻"]
-# dice_num = randint(1, 6)
-# print(dice_imgs[dice_num])
+# Reproduce the Bug
+from random import randint
+dice_imgs = ["❶", "❷", "❸", "❹", "❺", "❻"]
+dice_num = randint(1, 6)
+# DEBUGGER - it gaves index_error -> index out of bounds because sometimes it tries to retrieve
+# data from dice_imgs list at index 6
+# dice_num = randint (0,5) -> solution
+# Other soltion is print(dice_imgs[dice_num-1])
+print(dice_imgs[dice_num])
 
-# # Play Computer
-# year = int(input("What's your year of birth?"))
-# if year > 1980 and year < 1994:
-#   print("You are a millenial.")
-# elif year > 1994:
-#   print("You are a Gen Z.")
+# Play Computer
+# DEBUGGED - When year is 1994 it does not print anything at all
+year = int(input("What's your year of birth?"))
+# missing equal on comparison with 1994
+if year > 1980 and year < 1994:
+    print("You are a millenial.")
+elif year > 1994:
+    print("You are a Gen Z.")
 
-# # Fix the Errors
-# age = input("How old are you?")
-# if age > 18:
-# print("You can drive at age {age}.")
+# Fix the Errors
+# Every input come as string, so when dealing with integer value, cast is needed.
+# age = int(input("How old are you?"))
+age = input("How old are you?")
+if age > 18:
+#error in print - identation
+#print("You can drive at age {age}.")
+    # Fixed
+    print("You can drive at age {age}.")
+
 
 # #Print is Your Friend
 # pages = 0
