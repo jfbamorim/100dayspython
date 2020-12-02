@@ -6,6 +6,7 @@
 # Describe Problem
 def my_function():
     # DEBUGGED - IT NEVER REACHES 20 because range go from 0 to 19.
+    # for i in range(1, 21) -> solution
     for i in range(1, 20):
         if i == 20:
             print("You got it")
