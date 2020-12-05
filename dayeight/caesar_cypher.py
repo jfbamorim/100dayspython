@@ -1,4 +1,5 @@
-import caesar_cypher_art
+from dayeight import caesar_cypher_art
+
 #####################################################################
 # Final Project - Caesar Cipher
 #####################################################################
