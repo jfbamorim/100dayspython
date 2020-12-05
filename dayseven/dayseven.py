@@ -1,10 +1,9 @@
 ####################################################################
-# Day 7 - Hangman Project - Code re-arranged
+# Day 7 - Hangman Project - Code re-arranged 
 ####################################################################
 # Step 1
 import random
-import hangman_words
-import hangman_art
+from dayseven import hangman_words, hangman_art
 
 word_list = hangman_words.word_list
 chosen_word = random.choice(word_list)
