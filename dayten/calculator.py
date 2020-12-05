@@ -1,4 +1,4 @@
-from calculator_art import logo
+from dayten.calculator_art import logo
 
 
 # Add
