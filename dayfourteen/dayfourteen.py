@@ -1,5 +1,5 @@
 ################################################################
-# Day 14 - Beginner - Higher or lower game 
+# Day 14 - Beginner - Higher or lower game
 # Who was more followers on Instagram?
 ################################################################
 from dayfourteen.higher_or_lower_art import logo, vs
