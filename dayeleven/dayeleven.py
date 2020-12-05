@@ -1,8 +1,8 @@
 ################################################################
-# Day 11 - Beginner - The Blackjack Capstone Project
+# Day 11 - Beginner - The Blackjack Capstone Project 
 ################################################################
 import random
-from blackjack_art import logo
+from dayeleven.blackjack_art import logo
 
 ############### Our Blackjack House Rules #####################
 # The deck is unlimited in size.
