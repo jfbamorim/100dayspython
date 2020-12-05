@@ -1,3 +1,6 @@
+################################################################
+# Day 2 - Beginner - Understanding data types
+################################################################
 #My solution
 print("Welcome to the tip calculator")
 bill = float(input("What was the total bill? $"))
