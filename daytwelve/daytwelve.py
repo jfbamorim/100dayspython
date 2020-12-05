@@ -1,8 +1,8 @@
 ################################################################
-# Day 12 - Beginner - Number Guessing Game
+# Day 12 - Beginner - Number Guessing Game 
 ################################################################
 from random import randint
-from number_guessing_art import logo
+from daytwelve.number_guessing_art import logo
 
 EASY_LEVEL_TURNS = 10
 HARD_LEVEL_TURNS = 5
