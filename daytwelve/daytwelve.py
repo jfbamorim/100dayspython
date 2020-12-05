@@ -1,5 +1,5 @@
 ################################################################
-# Day 12 - Beginner - Number Guessing Game 
+# Day 12 - Beginner - Number Guessing Game
 ################################################################
 from random import randint
 from daytwelve.number_guessing_art import logo
