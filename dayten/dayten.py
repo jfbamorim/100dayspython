@@ -1,5 +1,5 @@
 ####################################################################
-# Day 10 - Functions with output
+# Day 10 - Functions with output and Calculator project
 ####################################################################
 def format_name(f_name, l_name):
     formatted_f_name = f_name.title()
