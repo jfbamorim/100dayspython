@@ -3,7 +3,6 @@
 ################################################################
 from dayfifteen.coffee_machine_data import MENU, resources
 
-
 def print_all_options(money):
     """ Print in output all the options for coffee in the machine """
     for resource in resources:
@@ -43,8 +42,8 @@ def process_request(option_ch):
     pennies = int(input("How many pennies?: "))
     total_received = quarters * 0.25 + dimes * 0.10 + nickles * 0.05 + pennies * 0.01
     global options, total_money
-    if option_ch in options and total_received >= options[option_ch]:
-        return_money = round(total_received - options[option_ch], 2)
+    if option_ch in options and total_received >= MENU[option_ch]["cost"]:
+        return_money = round(total_received - MENU[option_ch]["cost"], 2)
         if return_money > 0.00:
             print(f"Here is ${return_money} dollars in change")
         total_money += options[option_ch]
