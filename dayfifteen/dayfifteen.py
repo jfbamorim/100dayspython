@@ -1,7 +1,7 @@
 ################################################################
 # Day 15 - Intermediate - Coffee Machine Project
 ################################################################
-from coffee_machine_data import MENU, resources
+from dayfifteen.coffee_machine_data import MENU, resources
 
 
 def print_all_options(money):
