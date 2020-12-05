@@ -1,4 +1,5 @@
 ########################################################
+# Day 4 - Beginner - Random & Python lists
 # Banker Roulette Exercise - Who will pay the bill?
 ########################################################
 #import random
