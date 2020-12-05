@@ -1,5 +1,5 @@
 ################################################################
-# Day 13 - Beginner - Debugging and fixing errors in code 
+# Day 13 - Beginner - Debugging and fixing errors in code
 ################################################################
 ############DEBUGGING#####################
 
