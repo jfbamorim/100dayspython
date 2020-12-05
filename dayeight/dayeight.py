@@ -1,9 +1,8 @@
+#####################################################################
+# Day 8 - Beginner - Function Parameters & Caesar Cipher Project
+#####################################################################
 import math
 
-
-#####################################################################
-# Exercise 7 - Function Parameters
-#####################################################################
 # Write your code below this line 👇
 def paint_calc(height, width, cover):
     num_of_cans = math.ceil(height * width / cover)
