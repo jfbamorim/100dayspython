@@ -1,5 +1,5 @@
 ####################################################################
-# Day 7 - Hangman Project - Code re-arranged 
+# Day 7 - Hangman Project - Code re-arranged
 ####################################################################
 # Step 1
 import random
