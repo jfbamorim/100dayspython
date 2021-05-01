@@ -4,8 +4,7 @@
 
 
 # Master Python by building projects in 100 days, teached by Dr. Angela Yu. 
-# Learning to build websites, games, apps, plus scraping and data science.
-
+Learning to build websites, games, apps, plus scraping and data science.
 I am currently building a python portfolio, including:
 ## Concluded:
 - [Blackjack](https://github.com/jfbamorim/100dayspython/tree/master/dayeleven)
