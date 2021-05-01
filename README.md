@@ -8,9 +8,9 @@ Learning to build websites, games, apps, plus scraping and data science.
 
 I am currently building a python portfolio, including:
 
-- Blackjack
-- Snake Game
-- Pong Game
+- Blackjack                           -> Code avaliable on day 11
+- Snake Game                          -> Code avaliable on day 21
+- Pong Game                           -> Code avaliable on day 22
 - Auto Swipe on Tinder
 - Auto Job Applications on LinkedIn
 - Automate Birthday Emails/SMS
