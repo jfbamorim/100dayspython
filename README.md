@@ -10,6 +10,7 @@ I am currently building a python portfolio, including:
 - [Blackjack](https://github.com/jfbamorim/100dayspython/tree/master/dayeleven)
 - [Snake Game](https://github.com/jfbamorim/100dayspython/tree/master/daytwentyone)
 - [Pong Game](https://github.com/jfbamorim/100dayspython/tree/master/daytwentytwo)
+- [USA States Guessing Game](https://github.com/jfbamorim/100dayspython/tree/master/daytwentyfive/us-states-game-start)
 ## In progress:
 - Auto Swipe on Tinder
 - Auto Job Applications on LinkedIn
